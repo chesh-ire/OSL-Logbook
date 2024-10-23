@@ -1,0 +1,77 @@
+html,body {
+    height: 100%;
+}
+body {
+    background-color: #0f3854;
+    background: radial-gradient(ellipse at center,  #0a2e38  0%, #000000 70%);
+    background-size: 100%;
+}
+p {
+    margin: 0;
+    padding: 0;
+}
+#clock {
+    font-family: 'Share Tech Mono', monospace;
+    color: #ffffff;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: #daf6ff;
+  
+    .time {
+        letter-spacing: 0.05em;
+        font-size: 80px;
+        padding: 5px 0;
+    }
+    .date {
+        letter-spacing: 0.1em;
+        font-size: 24px;
+    }
+    .text {
+        letter-spacing: 0.1em;
+        font-size: 12px;
+        padding: 20px 0 0;
+    }
+
+    .text a{
+        color:coral;
+    }
+}
+
+#logout {
+    border: 1px solid white;
+    padding: 5px;
+    width: 40%;
+    margin: auto;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    text-align: center;
+    background-color: white;
+    text-decoration: none;
+}
+
+.exitLog{
+    border: 1px solid rgb(149, 214, 227);
+    padding: 20px;
+    width: 30%;
+    
+    border-radius: 10px;
+    background-color: rgb(255,255,255,0.3);
+    font-size: 17px;
+    cursor: pointer;
+    margin: auto;
+    margin-bottom: 20px;
+
+}
+
+.log-detail{
+    display: none;
+}
+
+.get-log-btn{
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid red;
+}

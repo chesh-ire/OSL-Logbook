@@ -1,0 +1,184 @@
+ .chat-btn {
+   margin: 20px;
+   padding: 20px;
+   border: 2px solid black;
+   width: 20%;
+   cursor: pointer;
+ }
+
+ .chat-container {
+   display: block;
+   border: 2px solid yellowgreen;
+   max-width: 400px;
+
+ }
+
+ .user-box {
+   /* border: 1px solid red; */
+   width: 40%;
+   padding: 5px;
+ }
+
+ .user-burb {
+   /* display: flex; */
+   height: 50px;
+   padding-top: 13px;
+   padding-right: 43px;
+   padding-bottom: 13px;
+   padding-left: 10px;
+
+   margin: 8px;
+   text-align: left;
+   border: 1px solid red;
+ }
+
+ .userUI-name-container {
+   display: flex
+ }
+
+ .userUI-container div {
+   width: 100px;
+ }
+
+ .active-status {
+   width: 20px;
+   height: 14px;
+  color:gray;
+   background-color: gray;
+   border-radius: 40px;
+   margin: 6px;
+ }
+ .online{
+  background-color: green;
+ }
+
+ .chat-content {
+  display: none;
+   width: 100%;
+   margin-left: auto;
+ }
+
+ .user-name {
+   padding: 5px;
+
+ }
+
+ .prev-msg {
+   border: 1px solid yellow;
+   height: 200px;
+   overflow-y: auto;
+ }
+
+ .send-box {
+  
+   padding: 4px;
+ }
+
+ .sent-msg {
+   text-align: right;
+   margin: 3px;
+   padding: 5px;
+   border-radius: 3px;
+   border: 1px solid white;
+   margin-left: 50%;
+ }
+
+ .rec-msg {
+   text-align: center;
+   margin: 3px;
+   padding: 5px;
+   background-color: rgb(140, 140, 241);
+   width: 40%;
+   border-radius: 3px;
+ }
+ .chat-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+.user-box {
+  width: 200px;
+  max-width: 200px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.user-burb {
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.user-name {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.active-status {
+  color: green;
+}
+
+.chat-content {
+  width: 100%;
+  height: calc(100% - 200px);
+  /* overflow: auto; */
+}
+
+.user-name {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.prev-msg {
+  margin-top: 10px;
+}
+
+.rec-msg {
+  color: #666;
+}
+
+.send-box {
+  /* width: 100%; */
+  bottom: 0;
+  border-top: 1px solid #ccc;
+  padding: 10px;
+  /* Add some space between the message input and send button */
+  margin-bottom: 10px;
+}
+
+
+input {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.msg-send-btn {
+  background-color: #007bff;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+
+@media screen and (max-width: 768px) {
+  .chat-container {
+    flex-direction: column-reverse;
+    width: 100vw;
+  }
+
+  .user-box {
+    width: 100%;
+  }
+
+  .chat-content {
+    width: 100%;
+    height: auto;
+  }
+}
